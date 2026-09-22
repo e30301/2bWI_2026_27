@@ -5,6 +5,8 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import Button from "./components/Button.tsx";
 import Card from "./components/Card.tsx";
+import List from "./components/List.tsx";
+
 
 export default function App() {
 
@@ -12,6 +14,8 @@ export default function App() {
     <>
         <Button text="Sendar" function1="a()"/>
         <Card pname="John Doe" occupation="Architect & Engineer"/>
+        <List/>
+
     </>
   )
 }
