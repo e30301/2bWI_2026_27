@@ -1,15 +1,18 @@
-import React from 'react'
+import { useState } from 'react';
 
 type Props = {
-    function1: string;
     text: string;
-
 }
 
-export default function Card({ function1, text }: Props) {
+export default function Card({ text }: Props) {
+  const [count, setCount] = useState(0);
+
   return (
-    <button className="text-white w-40 h-15 bg-green-600 flex items-center justify-center cursor-pointer" onclick={function1} >
-        {text}
+    <button 
+      className="text-white w-40 h-15 bg-1 flex items-center justify-center cursor-pointer" 
+      onClick={() => setCount(count + 1)}
+    >
+        {count}
     </button>
   )
 }

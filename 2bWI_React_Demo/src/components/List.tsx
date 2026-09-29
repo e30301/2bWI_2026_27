@@ -1,4 +1,3 @@
-import React from 'react'
 import ListItem from "./ListItem.tsx";
 
 type Props = {
@@ -6,7 +5,7 @@ type Props = {
 
 export default function List() {
   return (
-    <div>
+    <div className="items-center">
       <ListItem listtext="Coffee" />
       <ListItem listtext="Tea" />
       <ListItem listtext="Water" />

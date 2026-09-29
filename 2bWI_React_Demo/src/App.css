@@ -3,4 +3,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 100px;
+    background-color: var(--color-2);
+    height: 100vh;
 }
