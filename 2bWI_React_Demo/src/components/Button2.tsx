@@ -1,19 +1,12 @@
-type Props = {
-    text: string;
-}
+type Props = { text: string; onClick: () => void };
 
-export default function Card({ text }: Props) {
-
+export default function Button2({ text, onClick }: Props) {
   return (
-    <button className="text-white w-40 h-15 bg-1 flex items-center justify-center cursor-pointer" 
-    onClick={() => 
-      function toggle() {
-        var gif = document.getElementById()
-      }
-    }
-    
+    <button
+      className="text-white w-40 h-15 bg-1 flex items-center justify-center cursor-pointer"
+      onClick={onClick}
     >
       {text}
     </button>
-  )
+  );
 }

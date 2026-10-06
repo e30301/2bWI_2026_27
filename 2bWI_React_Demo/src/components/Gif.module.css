@@ -1,0 +1,13 @@
+.hidden {
+  opacity: 0;
+}
+
+@keyframes flashbang {
+  0% { opacity: 0; }
+  99% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate {
+  animation: flashbang 5s forwards;
+}
