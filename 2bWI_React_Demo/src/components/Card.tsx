@@ -13,7 +13,7 @@ export default function Card({ pname, occupation }: Props) {
   return (
     <div className="shadow-[0_4px_8px_0_rgba(0,0,0,0.2)] transition duration-300 hover:shadow-[0_8px_16px_0_rgba(0,0,0,0.2)] min-w-0 w-100 text-fg rounded-lg">
       {/*<img className="w-100%" src="https://picsum.photos/600/498" alt="avatar"></img> -->*/}
-      <img className="w-full rounded-lg" src="https://www.w3schools.com/howto/img_avatar.png" alt="avatar"></img>
+      <img className="w-full rounded-lg" src="https://images.theconversation.com/files/230019/original/file-20180731-136673-v8g21v.jpg?ixlib=rb-1.1.0&q=15&auto=format&w=600&h=449&fit=crop&dpr=3" alt="avatar"></img>
 
       <div className="px-4 py-0.5 w-full">
         <h4><b>{pname}</b></h4> 
