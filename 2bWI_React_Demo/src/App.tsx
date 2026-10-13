@@ -5,6 +5,7 @@ import Button2 from "./components/Button2.tsx"
 import Gif from "./components/Gif.tsx"
 import Card from "./components/Card.tsx"
 import List from "./components/List.tsx"
+import Egg from "./components/Egg.tsx"
 
 export default function App() {
   const [show, setShow] = useState(false);
@@ -19,6 +20,7 @@ export default function App() {
       <Card pname="Donald Trump" occupation="Professionelle Orange" />
       <br />
       <List />
+      <Egg />
     </>
   )
 }
