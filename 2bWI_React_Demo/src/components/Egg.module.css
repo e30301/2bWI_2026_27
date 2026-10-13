@@ -8,10 +8,6 @@
   user-select: none;
 }
 .egg:hover {
-    animation: eggr 1s linear infinite;
+    animation: eggr 0.4s linear ;
 }
 
-@keyframes eggr {
-  from {rotate: 0deg;}
-  to {rotate: 360deg;}
-}

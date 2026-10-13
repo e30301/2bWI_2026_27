@@ -9,9 +9,25 @@ import Egg from "./components/Egg.tsx"
 
 export default function App() {
   const [show, setShow] = useState(false);
+  const [eggh, eggs] = useState(1);
 
   return (
     <>
+      <div>
+        <div>
+          <input
+            type="range"
+            min="1"
+            max="5000"
+            value={eggh}
+            onChange={(e) => eggs(parseInt(e.target.value))}
+          />
+        </div>
+
+        {Array.from({ length: eggh }).map((_, i) => (
+          <Egg key={i} />
+        ))}
+      </div>
       <Button text="Counter" />
       <br />
       <Button2 text="button" onClick={() => setShow(true)} />
@@ -20,7 +36,6 @@ export default function App() {
       <Card pname="Donald Trump" occupation="Professionelle Orange" />
       <br />
       <List />
-      <Egg />
     </>
   )
 }
