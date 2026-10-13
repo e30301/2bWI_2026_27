@@ -1,5 +1,5 @@
 import styles from './Gif.module.css';
-import img from '../assets/sthmCnCpfr8M8jtTQy.webp';
+import img from '../assets/giphy.gif';
 
 type Props = { show: boolean };
 
