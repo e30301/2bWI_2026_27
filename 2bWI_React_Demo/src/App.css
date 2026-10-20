@@ -5,4 +5,14 @@ body {
     padding: 100px;
     background-color: var(--color-2);
     height: 100vh;
+    width: 100vw;
+}
+.container {
+    transform: rotateZ(45deg);
+    animation: 600s rotate forwards infinite linear;
+}
+
+@keyframes rotate {
+    0% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(359deg);}
 }

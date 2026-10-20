@@ -1,6 +1,7 @@
 import './App.css'
 import { useState } from 'react'
 import Button from "./components/Button.tsx"
+import Backwards from "./components/Backwards.tsx"
 import Button2 from "./components/Button2.tsx"
 import Gif from "./components/Gif.tsx"
 import Card from "./components/Card.tsx"
@@ -13,29 +14,32 @@ export default function App() {
 
   return (
     <>
-      <div>
+      {Array.from({ length: eggh }).map((_, i) => (
+            <Egg key={i} />
+          ))}
+      <div id="container" className='container'>
         <div>
-          <input
-            type="range"
-            min="1"
-            max="5000"
-            value={eggh}
-            onChange={(e) => eggs(parseInt(e.target.value))}
-          />
-        </div>
+          <div>
+            <input
+              type="range"
+              min="1"
+              max="5000"
+              value={eggh}
+              onChange={(e) => eggs(parseInt(e.target.value))}
+            />
+          </div>
 
-        {Array.from({ length: eggh }).map((_, i) => (
-          <Egg key={i} />
-        ))}
+        </div>
+        <Button text="Counter" />
+        <Backwards text="a" />
+        <br />
+        <Button2 text="button" onClick={() => setShow(true)} />
+        <Gif show={show} />
+        <br />
+        <Card pname="Donald Trump" occupation="Professionelle Orange" />
+        <br />
+        <List />
       </div>
-      <Button text="Counter" />
-      <br />
-      <Button2 text="button" onClick={() => setShow(true)} />
-      <Gif show={show} />
-      <br />
-      <Card pname="Donald Trump" occupation="Professionelle Orange" />
-      <br />
-      <List />
     </>
   )
 }

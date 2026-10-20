@@ -1,5 +1,4 @@
 //import { generateMnemonic } from 'bip39'; //das nehm ich nicht mehr, das muss man installieren
-import { useState } from 'react';
 
 type Props = {
   pname: string;
